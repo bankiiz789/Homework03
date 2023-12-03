@@ -1,0 +1,337 @@
+/* Fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Sarabun:wght@100;400;600&display=swap');
+
+/* Css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global setting */
+
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 10px;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+/* header navbar */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid gainsboro;
+    flex-basis: 100%;
+    padding: 8px 0px 16px 0px;
+
+}
+
+header a {
+    color: black;
+    font-weight: 600;
+}
+
+/* logo in navbar */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo>* {
+    padding: 4px;
+}
+
+.logo span {
+    font-weight: 400;
+}
+
+
+/* menu in navbar */
+
+.menu>ul {
+    display: flex;
+}
+
+/* sign-in in navbar */
+
+.sign-in>ul {
+    display: flex;
+}
+
+.sign-in>ul>li:nth-child(3) {
+    border-right: 1px solid gainsboro;
+}
+
+/* Notification Style */
+.cart-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+.fa-shopping-cart::before {
+
+    font-family: 'Font Awesome 5 Free';
+    content: "\f07a";
+    font-size: 24px;
+}
+
+.notification {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 8px;
+}
+
+/* My cart  */
+
+.topic {
+    padding-inline: 3.5em;
+    padding-top: 2em;
+}
+
+.container {
+    padding-inline: 7rem;
+    display: flex;
+}
+
+.shopping {
+    display: flex;
+
+    width: 50%;
+    flex-direction: column;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    margin-block: 0.5rem;
+}
+
+.product>img,
+.product>div,
+.product>form {
+    margin-inline: 1rem;
+}
+
+
+.bin {
+    width: 6%;
+}
+
+/* detail product */
+
+.detail-pd {
+    border-radius: 10px;
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+    background-image: url(./pics/docs-new.png);
+    background-size: cover;
+
+}
+
+.detail-pd h4 {
+    padding-top: 12px;
+    font-weight: 400;
+
+}
+
+.detail-pd p {
+    font-weight: 100;
+}
+
+.detail-pd span {
+    border-radius: 10px;
+    color: rgb(66, 66, 143);
+    background-color: azure;
+    padding: 8px;
+}
+
+
+/* ****************************** */
+
+
+.detail-pd2 {
+    border-radius: 10px;
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+    background-image: url(./pics/slides-new.png);
+    background-size: cover;
+
+}
+
+.detail-pd2 h4 {
+    padding-top: 12px;
+    font-weight: 400;
+
+}
+
+.detail-pd2 p {
+    font-weight: 100;
+}
+
+.detail-pd2 span {
+    border-radius: 10px;
+    color: rgb(247, 151, 7);
+    background-color: azure;
+    padding: 8px;
+}
+
+.detail-pd2 span img {
+    text-align: center;
+}
+
+/* form in My Card */
+form h2 {
+    margin-block: 1rem;
+    font-weight: 400;
+}
+
+form h3 {
+    font-weight: 400;
+}
+
+.product .price {
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.custom-radio {
+
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 4px;
+    border: none;
+    background-color: gainsboro;
+}
+
+input[type="radio"]:checked+.custom-radio {
+    background-color: rgb(52, 235, 174);
+}
+
+.custom-radio {
+
+    padding-inline: 4px;
+}
+
+.select-lvl {
+    font-weight: 400;
+    border: none;
+    margin-inline: 0.8rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.select-lvl:focus{
+    border: 1px solid rgb(52, 235, 174);
+    border-radius: 8px;
+
+}
+
+
+
+
+/* Payment */
+
+.payment {
+    border: 1px solid gainsboro;
+    width: 50%;
+    border-radius: 8px;
+    margin-inline-start: 1.5rem;
+    margin-block: 0.5rem;
+}
+
+.payment * {
+    margin-block: 1rem;
+}
+
+/* Info */
+
+.info {
+    padding: 2rem;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total h2 {
+    color: rgb(52, 235, 174);
+}
+
+.coupon {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid gainsboro;
+}
+
+.coupon img {
+    width: 5%;
+    height: 20px;
+}
+
+.coupon input {
+    flex-grow: 4;
+    padding: 12px;
+    margin-inline: 1rem;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+}
+
+.coupon button {
+    flex-grow: 2;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid rgb(52, 235, 174);
+    color: rgb(52, 235, 174);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+button.finish {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(52, 235, 174);
+    font-weight: 600;
+    cursor: pointer;
+}
