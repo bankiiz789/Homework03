@@ -13,7 +13,12 @@
 
 a {
     text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
 
+}
+a:hover {
+    background-color:rgb(52, 235, 174) ;
 }
 
 ul {
@@ -143,6 +148,10 @@ header a {
 
 .bin {
     width: 6%;
+}
+.bin:hover {
+    box-shadow: -1px 1.5px 8px grey;
+    border-radius: 50%;
 }
 
 /* detail product */
@@ -326,6 +335,11 @@ input[type="radio"]:checked+.custom-radio {
     cursor: pointer;
 }
 
+.coupon button:hover {
+    background-color:rgb(52, 235, 174) ;
+    color: aliceblue;
+}
+
 button.finish {
     width: 100%;
     padding: 12px;
@@ -334,4 +348,9 @@ button.finish {
     background-color: rgb(52, 235, 174);
     font-weight: 600;
     cursor: pointer;
+}
+
+button.finish:hover {
+    background-color: rgb(50, 210, 160);
+    box-shadow: -1px 3px 8px silver;
 }
